@@ -1,6 +1,5 @@
 (function () {
 
-
     function weeksBetween(d1, d2) {
         return Math.round((d2 - d1) / (7 * 24 * 60 * 60 * 1000));
     }
@@ -9,7 +8,7 @@
 
     const items = [
         // 35
-        'Nach Polen 🇵🇱 fahren und dort mit einem VW Caddy Maxi Campen 🏕️',
+        'Nach Polen fahren und dort mit einem VW Caddy Maxi Campen 🇵🇱',
         // 36
         '<a href="http://aldar.de/hannover/" target="_blank">In einem syrischen Restaurant essen gehen 🧆</a>',
         // 37
@@ -19,63 +18,70 @@
         // 39
         '<a href="https://www.tv-plus.de/bingo-tickets/" target="_blank" title="Weil wir solche Rentner sind">Bingo spielen und laut Bingo rufen 🎲</a>',
         // 40
-        'amerika', // @todo: was für sie alleine suchen
+        'Ein Instrument lernen 🎸',
         // 41
-        'amerika', // @todo: was für sie alleine suchen
+        'Einen Telefonstreich machen 📞',
         // 42
-        'amerika', // @todo: was für sie alleine suchen
+        'Ein Lied im Radio wünschen 📻',
         // 43
-        'amerika', // @todo: was für sie alleine suchen
+        'Ein 5000-Teile Puzzle schaffen 🧩',
         // 44
-        'amerika', // @todo: was für sie alleine suchen
+        'Ein neues Buch anfangen 📖',
         // 45
         'An einem Ort in deiner Stadt Müll aufräumen 🛢️',
         // 46
-        'Ein Lied im Radio wünschen 📻',
+        'Etwas gemeinnütziges tun 🍲',
         // 47
-        'Einen Telefonstreich machen 📞',
-        // 48
-        'Ein 5000-Teile Puzzle schaffen 🧩',
-        // 49
         'Insekten essen 🐛',
+        // 48
+        'Einen Standard-Tanzkurs besuchen 💃🕺',
+        // 49
+        'Ein Bild fürs eigene Zuhause malen 🖼️',
         // 50
         'Bei einem Dinner im Dunkeln mitmachen ◼️',
         // 51
         'Deinen Geburtstag richtig feiern! 🎁',
         // 52
-        'Etwas gemeinnütziges tun 🍲',
-        // 53
-        'Ein Instrument lernen 🎸',
-
-        // KW 1 kommt jetzt !!
         'eine Schlittenfahrt im Schnee 🛷',
-        // 2
-        'Einen Standard-Tanzkurs besuchen 💃🕺',
-        // 3
+        // 53
         'In einer heißen Quelle baden ♨️',
-        // 4
-        'Polarlichter sehen 🦄',
-        // 5
-        'Ein Bild fürs eigene Zuhause malen 🖼️',
-        // 6
+        // KW 1 kommt jetzt !!
+        'Die Polarlichter sehen 🦄',
+        // 2
         'Einen Töpferkurs besuchen 🍯',
-        // 7
+        // 3
         'Eine Kerze selbermachen 🕯️',
-
-        'Zu einen Schiffswrack tauchen 🚢',
-        'Auf einem Kamel reiten 🐫',
-        'In einen Indoor Trampolin-Park gehen 🎫',
-        'Zorbing 🎱',
-
-        'Auf einer Vespa durch Italien fahren 🛵',
-        'Eine Zeitkapsel vergraben ⏳',
-
-        'Einem Escape-Room entkommen 🗝️',
-        'Bei einer Pub-Quiznacht mitmachen 🍺️',
-        'Bouldern gehen 🧗',
-
+        // 4
         'Ein Lied in einer Karaoke-Bar singen 🎤',
+        // 5
+        'In einen Indoor Trampolin-Park gehen 🎫',
+        // 6
+        'Einem Escape-Room entkommen 🗝️',
+        // 7
+        'Bei einer Pub-Quiznacht mitmachen 🍺️',
+        // 8
+        'Bouldern gehen 🧗',
+        // 9
+        'Auf einem Kamel reiten 🐫',
+        // 10
+        'Auf einer Vespa durch Italien fahren 🛵',
+        // 11
+        'Zorbing 🎱',
+        // 12
+        'Eine Zeitkapsel vergraben ⏳',
+        // 13
+        'Zu einen Schiffswrack tauchen 🚢',
+        // 14
+        '',
+        // 15
+        '',
+        // 16
+        '',
+        // 17
+        '',
+        // 18
         'Einen Vulkan besteigen 🌋',
+        // 19
         'Auf einen Eisberg klettern 🧊',
     ]
 
