@@ -1,0 +1,19 @@
+{
+    "name": "\u00d6fter mal was neues!?",
+    "short_name": "\u00d6fter mal was neues!?",
+    "icons": [
+        {
+            "src": "/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#53687e",
+    "background_color": "#53687e",
+    "display": "standalone"
+}
