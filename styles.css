@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Alata', sans-serif;
+    color: white;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(circle at center, #53687e, #3a4653);
+    position: relative;
+}
+
+
+.centered {
+    position: fixed;
+    left: 50%;
+    width: auto;
+    top: 50%;
+    height: auto;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.kw {
+    width: 100%;
+    font-size: 18px;
+    animation: fadein 5s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+.text {
+    width: 100%;
+    font-size: 30px;
+    animation: fadein 5s;
+    animation-delay: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
