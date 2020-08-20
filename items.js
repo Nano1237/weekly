@@ -1,11 +1,5 @@
 (function () {
-
-    function weeksBetween(d1, d2) {
-        return Math.round((d2 - d1) / (7 * 24 * 60 * 60 * 1000));
-    }
-
     const weekNow = weeksBetween(new Date('2020-08-25'), new Date());
-
     const items = [
         // 35
         'Nach Polen fahren und dort mit einem VW Caddy Maxi Campen 🇵🇱',
@@ -83,8 +77,27 @@
         'Einen Vulkan besteigen 🌋',
         // 19
         'Auf einen Eisberg klettern 🧊',
-    ]
+    ];
 
+    document.querySelector('[data-kw]').innerHTML = `Woche ${weekNow <= 0 ? 0 : weekNow}`;
+    document.querySelector('[data-text]').innerHTML = getCurrentElement();
+
+    /**
+     * @description
+     * Returns the passed weeks between two dates
+     * @param d1
+     * @param d2
+     * @returns {number}
+     */
+    function weeksBetween(d1, d2) {
+        return Math.round((d2 - d1) / (7 * 24 * 60 * 60 * 1000));
+    }
+
+    /**
+     * @description
+     * Returns the corresponding element of the current week
+     * @returns {string}
+     */
     function getCurrentElement() {
         const itemCount = items.length - 1;
         if (weekNow <= 0) {
@@ -94,9 +107,4 @@
         }
         return items[weekNow];
     }
-
-    const currentElement = getCurrentElement();
-
-    document.querySelector('[data-kw]').innerHTML = `Woche ${weekNow <= 0 ? 0 : weekNow}`;
-    document.querySelector('[data-text]').innerHTML = currentElement;
 })();
