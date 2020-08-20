@@ -1,5 +1,6 @@
 (function () {
     const weekNow = weeksBetween(new Date('2020-08-25'), new Date());
+
     const items = [
         // 35
         'Nach Polen fahren und dort mit einem VW Caddy Maxi Campen 🇵🇱',
@@ -79,7 +80,7 @@
         'Auf einen Eisberg klettern 🧊',
     ];
 
-    document.querySelector('[data-kw]').innerHTML = `Woche ${weekNow <= 0 ? 0 : weekNow}`;
+    document.querySelector('[data-kw]').innerHTML = `${weekNow <= 0 ? 1 : weekNow + 1}. Woche`;
     document.querySelector('[data-text]').innerHTML = getCurrentElement();
 
     /**

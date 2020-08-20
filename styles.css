@@ -13,7 +13,7 @@ body {
 .container {
     width: 100vw;
     height: 100vh;
-    background: radial-gradient(circle at center, #53687e, #3a4653);
+    background: radial-gradient(circle at center, #53687e, #3a4653 80%, #3a4653);
     position: relative;
 }
 
@@ -39,7 +39,7 @@ body {
 .kw {
     width: 100%;
     font-size: 18px;
-    animation: fadein 5s;
+    animation: fadein 4s;
     opacity: 0;
     animation-fill-mode: forwards;
 }
@@ -47,8 +47,8 @@ body {
 .text {
     width: 100%;
     font-size: 30px;
-    animation: fadein 5s;
-    animation-delay: 2s;
+    animation: fadein 4s;
+    animation-delay: 1s;
     opacity: 0;
     animation-fill-mode: forwards;
 }
