@@ -28,6 +28,14 @@ body {
     text-align: center;
 }
 
+@media (max-width: 425px) {
+    .centered {
+        left: 0;
+        margin: 0 20px;
+        transform: translate(0, -50%);
+    }
+}
+
 .kw {
     width: 100%;
     font-size: 18px;
