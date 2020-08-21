@@ -1,10 +1,10 @@
 import {items} from "./items";
 
 export function createSlides() {
-    const weekNow = weeksBetween(new Date('2020-08-25'), new Date());
+    const end = new Date();
+    const weekNow = weeksBetween(new Date('2020-08-27'), end);
     const untilIndex = (weekNow <= 0 ? 0 : weekNow); // @todo: get current kw
     items.slice(0, untilIndex + 1).map((item, index) => {
-        console.log(index);
         return createSlideElement({
             index: index + 1,
             emoji: item.emoji
