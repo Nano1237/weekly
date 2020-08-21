@@ -1,5 +1,4 @@
-import "offline-init";
-import {createSlides} from "./create-slides";
-import {createSlider} from "./slider";
+import 'offline-init';
+import {Slider} from './slider';
 
-createSlider(createSlides());
+Slider.create();
