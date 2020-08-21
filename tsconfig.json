@@ -1,0 +1,23 @@
+{
+  "include": [
+    "lib"
+  ],
+  "exclude": [
+    "node_modules",
+    "examples"
+  ],
+  "compilerOptions": {
+    "noImplicitAny": true,
+    "target": "es5",
+    "experimentalDecorators": true,
+    "module": "amd",
+    "declaration": true,
+    "outFile": "auto-tracking.js",
+    "strict": false,
+    "noEmitHelpers": true,
+    "preserveConstEnums": true,
+    "removeComments": true,
+    "sourceMap": false
+  }
+}
+x

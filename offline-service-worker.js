@@ -14,13 +14,12 @@
         return caches.open(version + staticCacheName)
             .then(function (cache) {
                 return cache.addAll([
-                    'src/items.js',
-                    'src/offline-init.js',
                     'index.html',
                     'styles.css',
+                    'bundle.js'
                 ]);
             });
-    };
+    }
 
     self.addEventListener('install', function (event) {
         event.waitUntil(updateStaticCache());

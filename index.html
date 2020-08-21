@@ -4,25 +4,22 @@
     <meta charset="UTF-8">
     <title>Öfter mal was neues!?</title>
     <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link href="styles.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
+    <!--<link rel="manifest" href="site.webmanifest">-->
     <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#3a4653">
 </head>
 <body>
-<div class="container">
-    <div class="centered">
-        <p class="kw" data-kw></p>
-        <p class="text" data-text></p>
-    </div>
+<div class="container swiper-container" data-container>
+    <div class="swiper-wrapper" data-wrapper></div>
 </div>
 <noscript>JavaScript muss aktiv sein um diese Seite zu verwenden!</noscript>
-<script src="src/items.js"></script>
-<script src="src/offline-init.js"></script>
+<script src="bundle.js"></script>
 </body>
 </html>
