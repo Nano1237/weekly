@@ -2,7 +2,7 @@ import {Item} from './item';
 
 export const items: Item[] = [
     // 35
-    {text: 'Nach Polen fahren und dort mit einem VW Caddy Maxi Campen', emoji: '🇵🇱'},
+    {text: 'Nach Rügen fahren und dort mit einem VW Caddy Maxi Campen', emoji: '🏕️'},
     // 36
     {
         text: '<a href="http://aldar.de/hannover/" target="_blank">In einem syrischen Restaurant essen gehen</a>',
