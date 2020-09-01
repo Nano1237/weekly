@@ -1,17 +1,17 @@
 import {Item} from './item';
 
 export const items: Item[] = [
-    // 35
+    // 35 
     {text: 'Nach Rügen fahren und dort mit einem VW Caddy Maxi Campen', emoji: '🏕️'},
     // 36
     {
-        text: '<a href="http://aldar.de/hannover/" target="_blank">In einem syrischen Restaurant essen gehen</a>',
-        emoji: '🧆'
+        text: 'Eine Sache machen, die „nur ein Kind“ machen würde (z. B. Pfützenspringen, Scheibe Wurst an der Theke erfragen oder mit Murmeln spielen)',
+        emoji: '🧒'
     },
     // 37
     {
-        text: 'Eine Sache machen, die „nur ein Kind“ machen würde (z. B. Pfützenspringen, Scheibe Wurst an der Theke erfragen oder mit Murmeln spielen)',
-        emoji: '🧒'
+        text: 'Mithilfe von <a href="https://www.komoot.de/" target="_blank">Komoot</a> eine Tour in Steinhude machen',
+        emoji: '🥾'
     },
     // 38
     {text: 'Urlaub in einem Hausboot machen', emoji: '🚤'},
@@ -24,6 +24,10 @@ export const items: Item[] = [
     },
     // 40
     {text: 'Ein Instrument lernen', emoji: '🎸'},
+    {
+        text: '<a href="http://aldar.de/hannover/" target="_blank">In einem syrischen Restaurant essen gehen</a>',
+        emoji: '🧆'
+    },
     // 41
     {text: 'Einen Telefonstreich machen', emoji: '📞'},
     // 42
