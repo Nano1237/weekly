@@ -80,7 +80,7 @@ export class Slider {
             kw.classList.add('animated');
             text.classList.add('animated');
         }
-        const container = document.createElement('div');
+        const container = Element.createElement('div', 'item-wrapper');
         const slide = Element.createElement('div', 'swiper-slide');
         container.append(kw, text);
         slide.appendChild(container);

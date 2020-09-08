@@ -1,22 +1,10 @@
 import {Item} from './item';
+import {FIX_ITEMS} from "./fix-items";
 
 export const items: Item[] = [
-    // 35 
-    {text: 'Nach Rügen fahren und dort mit einem VW Caddy Maxi Campen', emoji: '🏕️'},
-    // 36
-    {
-        text: 'Eine Sache machen, die „nur ein Kind“ machen würde (z. B. Pfützenspringen, Scheibe Wurst an der Theke erfragen oder mit Murmeln spielen)',
-        emoji: '🧒'
-    },
-    // 37
-    {
-        text: 'Mithilfe von <a href="https://www.komoot.de/" target="_blank">Komoot</a> eine Tour in Steinhude machen',
-        emoji: '🥾'
-    },
-    // 38
-    {text: 'Urlaub in einem Hausboot machen', emoji: '🚤'},
+    ...FIX_ITEMS,
     // 39
-    {text: 'Einen Handabdruck in feuchtem Zement hinterlassen️', emoji: '🖐'},
+    {text: 'Jemanden mit dem gleichen Namen kontaktieren', emoji: '👭'},
     // 39
     {
         text: '<a href="https://www.tv-plus.de/bingo-tickets/" target="_blank" title="Weil wir solche Rentner sind">Bingo spielen und laut Bingo rufen</a>',
@@ -43,7 +31,7 @@ export const items: Item[] = [
     // 47
     {text: 'Insekten essen', emoji: '🐛'},
     // 48
-    {text: 'Einen Standard-Tanzkurs besuchen', emoji: '💃🕺'},
+    {text: 'Einen Tanzkurs besuchen', emoji: '💃🕺'},
     // 49
     {text: 'Ein Bild fürs eigene Zuhause malen', emoji: '🖼️'},
     // 50
@@ -61,7 +49,7 @@ export const items: Item[] = [
     // 3
     {text: 'Eine Kerze selbermachen', emoji: '🕯️'},
     // 4
-    {text: 'Ein Lied in einer Karaoke-Bar singen', emoji: '🎤'},
+    {text: 'Einen Dankesbrief an eine Firma schreiben', emoji: ''},
     // 5
     {text: 'In einen Indoor Trampolin-Park gehen', emoji: '🎫'},
     // 6
@@ -81,15 +69,21 @@ export const items: Item[] = [
     // 13
     {text: 'Zu einen Schiffswrack tauchen', emoji: '🚢'},
     // 14
-    {text: '', emoji: ''},
+    {text: 'https://www.indoor-skydiving.com/UI/Booking/bookPackage.aspx?lang=1&type=30', emoji: ''},
     // 15
-    {text: '', emoji: ''},
+    {text: 'http://www.7biobauern.com/das-konzept/', emoji: ''},
     // 16
-    {text: '', emoji: ''},
+    {text: 'flametta.de/giessabende.htm', emoji: ''},
     // 17
-    {text: '', emoji: ''},
+    {text: 'papier selber machen', emoji: ''},
     // 18
     {text: 'Einen Vulkan besteigen', emoji: '🌋'},
     // 19
     {text: 'Auf einen Eisberg klettern', emoji: '🧊'},
+    {text: 'Jemanden mit dem gleichen namen kontaktieren', emoji: '🧊'},
+    {text: 'Einen Handabdruck in feuchtem Zement hinterlassen️', emoji: '🖐'},
+    {text: 'https://urlaub.nuernberger-land.de/land-natur/landerlebnisse/imker-fuer-einen-tag.html', emoji: ''},
+    {text: 'Ein Kartenhaus bauen', emoji: ''},
+    {text: 'Ein Kinderbild nachstellen', emoji: ''},
+    {text: 'Eine Zigarre rauchen', emoji: ''},
 ];
