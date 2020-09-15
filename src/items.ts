@@ -4,7 +4,7 @@ import {FIX_ITEMS} from "./fix-items";
 export const items: Item[] = [
     ...FIX_ITEMS,
     // 39
-    {text: 'Jemanden mit dem gleichen Namen kontaktieren', emoji: '👭'},
+    {text: 'Ein Kinderbild nachstellen', emoji: '🖼️'},
     // 39
     {
         text: '<a href="https://www.tv-plus.de/bingo-tickets/" target="_blank" title="Weil wir solche Rentner sind">Bingo spielen und laut Bingo rufen</a>',
@@ -39,7 +39,7 @@ export const items: Item[] = [
     // 51
     {text: 'Deinen Geburtstag richtig feiern!', emoji: '🎁'},
     // 52
-    {text: 'eine Schlittenfahrt im Schnee', emoji: '🛷'},
+    {text: 'eine Schlittenfahrt im Schnee machen', emoji: '🛷'},
     // 53
     {text: 'In einer heißen Quelle baden', emoji: '♨️'},
     // KW 1 kommt jetzt !!
@@ -75,15 +75,14 @@ export const items: Item[] = [
     // 16
     {text: 'flametta.de/giessabende.htm', emoji: ''},
     // 17
-    {text: 'papier selber machen', emoji: ''},
+    {text: 'Papier selber machen', emoji: ''},
     // 18
     {text: 'Einen Vulkan besteigen', emoji: '🌋'},
     // 19
     {text: 'Auf einen Eisberg klettern', emoji: '🧊'},
-    {text: 'Jemanden mit dem gleichen namen kontaktieren', emoji: '🧊'},
+    {text: 'Jemanden mit dem gleichen Namen kontaktieren', emoji: '👭'},
     {text: 'Einen Handabdruck in feuchtem Zement hinterlassen️', emoji: '🖐'},
-    {text: 'https://urlaub.nuernberger-land.de/land-natur/landerlebnisse/imker-fuer-einen-tag.html', emoji: ''},
+    {text: 'https://urlaub.nuernberger-land.de/land-natur/landerlebnisse/imker-fuer-einen-tag.html', emoji: ''},//findet sie so lala
     {text: 'Ein Kartenhaus bauen', emoji: ''},
-    {text: 'Ein Kinderbild nachstellen', emoji: ''},
     {text: 'Eine Zigarre rauchen', emoji: ''},
 ];

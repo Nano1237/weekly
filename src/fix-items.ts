@@ -10,5 +10,5 @@ export const FIX_ITEMS: Item[] = [
         text: 'Mithilfe von <a href="https://www.komoot.de/" target="_blank">Komoot</a> eine Tour machen',
         emoji: '🥾'
     },
-    {text: 'Urlaub in einem Hausboot machen', emoji: '🚤'},
+    {text: 'Urlaub auf einem Hausboot machen', emoji: '🚤'},
 ];
