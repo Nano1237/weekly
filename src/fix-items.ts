@@ -11,4 +11,5 @@ export const FIX_ITEMS: Item[] = [
         emoji: '🥾'
     },
     {text: 'Urlaub auf einem Hausboot machen', emoji: '🚤'},
+    {text: 'Ein Kinderbild nachstellen', emoji: '🖼️'},
 ];
