@@ -12,4 +12,8 @@ export const FIX_ITEMS: Item[] = [
     },
     {text: 'Urlaub auf einem Hausboot machen', emoji: '🚤'},
     {text: 'Ein Kinderbild nachstellen', emoji: '🖼️'},
+    {
+        text: 'In Wilhelmshaven mit einem Segelschiff fahren',
+        emoji: '⛵'
+    },
 ];

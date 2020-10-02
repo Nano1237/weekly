@@ -3,17 +3,13 @@ import {FIX_ITEMS} from "./fix-items";
 
 export const items: Item[] = [
     ...FIX_ITEMS,
-    {
-        text: 'In Wilhelmshaven mit einem Segelschiff fahren',
-        emoji: '⛵'
-    },
     // 39
+    {text: 'Ein Instrument lernen', emoji: '🎸'},
+    // 40
     {
         text: '<a href="https://www.tv-plus.de/bingo-tickets/" target="_blank">Bingo spielen und laut Bingo rufen</a>',
         emoji: '🎲'
     },
-    // 40
-    {text: 'Ein Instrument lernen', emoji: '🎸'},
     {
         text: '<a href="http://aldar.de/hannover/" target="_blank">In einem syrischen Restaurant essen gehen</a>',
         emoji: '🧆'
