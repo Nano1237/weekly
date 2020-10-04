@@ -3,8 +3,9 @@ import {FIX_ITEMS} from "./fix-items";
 
 export const items: Item[] = [
     ...FIX_ITEMS,
-    {text: 'Einem Escape-Room entkommen', emoji: '🗝️'},
-    // 39
+    // 42
+    {text: 'Bei einem Craftbeer-Tasting mitmachen', emoji: '🍺'},
+    // 43
     {text: 'Ein Instrument lernen', emoji: '🎸'},
     // 40
     {

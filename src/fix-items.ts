@@ -16,4 +16,5 @@ export const FIX_ITEMS: Item[] = [
         text: 'In Wilhelmshaven mit einem Segelschiff fahren',
         emoji: '⛵'
     },
+    {text: 'Einem Escape-Room entkommen', emoji: '🗝️'},
 ];
