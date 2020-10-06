@@ -17,4 +17,7 @@ export const FIX_ITEMS: Item[] = [
         emoji: '⛵'
     },
     {text: 'Einem Escape-Room entkommen', emoji: '🗝️'},
+    {text: 'Bei einem Craftbeer-Tasting mitmachen', emoji: '🍺'},
+    {text: 'Einen Telefonstreich machen', emoji: '📞'},
+    {text: 'Bei einer Halloween-Kostüm-Party den ersten Preis gewinnen!', emoji: '🎃'}, // KW 44
 ];

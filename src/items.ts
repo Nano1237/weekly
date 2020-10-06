@@ -3,86 +3,84 @@ import {FIX_ITEMS} from "./fix-items";
 
 export const items: Item[] = [
     ...FIX_ITEMS,
-    // 42
-    {text: 'Bei einem Craftbeer-Tasting mitmachen', emoji: '🍺'},
-    // 43
-    {text: 'Ein Instrument lernen', emoji: '🎸'},
-    // 40
+    // 45
+    {text: 'Ein Lied im Radio wünschen', emoji: '📻'},
+    // 46
+    {text: 'Anfangen ein Instrument zu lernen', emoji: '🎸'},
+    // 47
+    {text: 'Ein neues Buch anfangen', emoji: '📖'},
+    // 48
     {
         text: '<a href="https://www.tv-plus.de/bingo-tickets/" target="_blank">Bingo spielen und laut Bingo rufen</a>',
         emoji: '🎲'
     },
+    // 49
+    {text: 'Ein 5000-Teile Puzzle schaffen', emoji: '🧩'},
+    // 50
+    {text: 'An einem Ort in deiner Stadt Müll aufräumen', emoji: '🛢️'},
+    // 51
     {
         text: '<a href="http://aldar.de/hannover/" target="_blank">In einem syrischen Restaurant essen gehen</a>',
-        emoji: '🧆'
+        emoji: '🎁🧆🎁'
     },
-    // 41
-    {text: 'Einen Telefonstreich machen', emoji: '📞'},
-    // 42
-    {text: 'Ein Lied im Radio wünschen', emoji: '📻'},
-    // 43
-    {text: 'Ein 5000-Teile Puzzle schaffen', emoji: '🧩'},
-    // 44
-    {text: 'Ein neues Buch anfangen', emoji: '📖'},
-    // 45
-    {text: 'An einem Ort in deiner Stadt Müll aufräumen', emoji: '🛢️'},
-    // 46
-    {text: 'Etwas gemeinnütziges tun', emoji: '🍲'},
-    // 47
-    {text: 'Insekten essen', emoji: '🐛'},
-    // 48
-    {text: 'Einen Tanzkurs besuchen', emoji: '💃🕺'},
-    // 49
-    {text: 'Ein Bild fürs eigene Zuhause malen', emoji: '🖼️'},
-    // 50
-    {text: 'Bei einem Dinner im Dunkeln mitmachen', emoji: '◼️'},
-    // 51
-    {text: 'Deinen Geburtstag richtig feiern!', emoji: '🎁'},
     // 52
-    {text: 'eine Schlittenfahrt im Schnee machen', emoji: '🛷'},
+    {text: 'Etwas gemeinnütziges tun', emoji: '🍲'},
     // 53
-    {text: 'In einer heißen Quelle baden', emoji: '♨️'},
+    {text: 'Insekten essen', emoji: '🐛'},
     // KW 1 kommt jetzt !!
-    {text: 'Die Polarlichter sehen', emoji: '🦄'},
+    {text: 'Einen Tanzkurs besuchen', emoji: '💃🕺'},
+    // 1
+    {text: 'Ein Bild fürs eigene Zuhause malen', emoji: '🖼️'},
     // 2
-    {text: 'Einen Töpferkurs besuchen', emoji: '🍯'},
+    {text: 'Bei einem Dinner im Dunkeln mitmachen', emoji: '◼️'},
     // 3
-    {text: 'Eine Kerze selbermachen', emoji: '🕯️'},
+    {text: 'eine Schlittenfahrt im Schnee machen', emoji: '🛷'},
     // 4
-    {text: 'Einen Dankesbrief an eine Firma schreiben', emoji: ''},
+    {text: 'In einer heißen Quelle baden', emoji: '♨️'},
     // 5
-    {text: 'In einen Indoor Trampolin-Park gehen', emoji: '🎫'},
+    {text: 'Die Polarlichter sehen', emoji: '🦄'},
     // 6
-    {text: 'Einem Escape-Room entkommen', emoji: '🗝️'},
+    {text: 'Einen Töpferkurs besuchen', emoji: '🍯'},
     // 7
-    {text: 'Bei einer Pub-Quiznacht mitmachen', emoji: '🍺️'},
+    {text: 'Eine Kerze selbermachen', emoji: '🕯️'},
     // 8
-    {text: 'Bouldern gehen', emoji: '🧗'},
+    {text: 'Einen Dankesbrief an eine Firma schreiben', emoji: ''},
     // 9
-    {text: 'Auf einem Kamel reiten', emoji: '🐫'},
+    {text: 'In einen Indoor Trampolin-Park gehen', emoji: '🎫'},
     // 10
-    {text: 'Auf einer Vespa durch Italien fahren', emoji: '🛵'},
+    {text: 'Bei einer Pub-Quiznacht mitmachen', emoji: '🍺️'},
     // 11
-    {text: 'Zorbing', emoji: '🎱'},
+    {text: 'Bouldern gehen', emoji: '🧗'},
     // 12
-    {text: 'Eine Zeitkapsel vergraben', emoji: '⏳'},
+    {text: 'Auf einem Kamel reiten', emoji: '🐫'},
     // 13
-    {text: 'Zu einen Schiffswrack tauchen', emoji: '🚢'},
+    {text: 'Auf einer Vespa durch Italien fahren', emoji: '🛵'},
     // 14
-    {text: 'https://www.indoor-skydiving.com/UI/Booking/bookPackage.aspx?lang=1&type=30', emoji: ''},
+    {text: 'Zorbing', emoji: '🎱'},
     // 15
-    {text: 'http://www.7biobauern.com/das-konzept/', emoji: ''},
+    {text: 'Eine Zeitkapsel vergraben', emoji: '⏳'},
     // 16
-    {text: 'flametta.de/giessabende.htm', emoji: ''},
+    {text: 'Zu einen Schiffswrack tauchen', emoji: '🚢'},
     // 17
-    {text: 'Papier selber machen', emoji: ''},
+    {text: 'https://www.indoor-skydiving.com/UI/Booking/bookPackage.aspx?lang=1&type=30', emoji: ''},
     // 18
-    {text: 'Einen Vulkan besteigen', emoji: '🌋'},
+    {text: 'http://www.7biobauern.com/das-konzept/', emoji: ''},
     // 19
+    {text: 'flametta.de/giessabende.htm', emoji: ''},
+    // 20
+    {text: 'Papier selber machen', emoji: ''},
+    // 21
+    {text: 'Einen Vulkan besteigen', emoji: '🌋'},
+    // 22
     {text: 'Auf einen Eisberg klettern', emoji: '🧊'},
+    // 23
     {text: 'Jemanden mit dem gleichen Namen kontaktieren', emoji: '👭'},
+    // 24
     {text: 'Einen Handabdruck in feuchtem Zement hinterlassen️', emoji: '🖐'},
+    // 25
     {text: 'https://urlaub.nuernberger-land.de/land-natur/landerlebnisse/imker-fuer-einen-tag.html', emoji: ''},//findet sie so lala
+    // 26
     {text: 'Ein Kartenhaus bauen', emoji: ''},
+    // 27
     {text: 'Eine Zigarre rauchen', emoji: ''},
 ];
