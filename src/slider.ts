@@ -71,10 +71,14 @@ export class Slider {
      */
     private static itemToSlide(item: Item, index: number) {
         const kw = Element.createElement('div', 'kw');
-        kw.innerText = `${index <= 0 ? 1 : index}. Woche ${item.emoji}`;
         const text = Element.createElement('div', 'text');
         text.innerHTML = item.text;
-
+        if (item.done) {
+            kw.innerText = `${index <= 0 ? 1 : index}. Woche ✅`;
+            text.classList.add('done');
+        } else {
+            kw.innerText = `${index <= 0 ? 1 : index}. Woche ${item.emoji}`;
+        }
         // animate the slide if it has an emoji
         if (item.emoji !== '') {
             kw.classList.add('animated');
@@ -84,6 +88,7 @@ export class Slider {
         const slide = Element.createElement('div', 'swiper-slide');
         container.append(kw, text);
         slide.appendChild(container);
+
         document.querySelector('[data-wrapper]').appendChild(slide);
     }
 }

@@ -3,26 +3,6 @@ import {FIX_ITEMS} from "./fix-items";
 
 export const items: Item[] = [
     ...FIX_ITEMS,
-    // 45
-    {text: 'Ein Lied im Radio wünschen', emoji: '📻'},
-    // 46
-    {text: 'Anfangen ein Instrument zu lernen', emoji: '🎸'},
-    // 47
-    {text: 'Ein neues Buch anfangen', emoji: '📖'},
-    // 48
-    {
-        text: '<a href="https://www.tv-plus.de/bingo-tickets/" target="_blank">Bingo spielen und laut Bingo rufen</a>',
-        emoji: '🎲'
-    },
-    // 49
-    {text: 'Ein 5000-Teile Puzzle schaffen', emoji: '🧩'},
-    // 50
-    {text: 'An einem Ort in deiner Stadt Müll aufräumen', emoji: '🛢️'},
-    // 51
-    {
-        text: '<a href="http://aldar.de/hannover/" target="_blank">In einem syrischen Restaurant essen gehen</a>',
-        emoji: '🎁🧆🎁'
-    },
     // 52
     {text: 'Etwas gemeinnütziges tun', emoji: '🍲'},
     // 53
