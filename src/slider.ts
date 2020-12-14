@@ -55,7 +55,7 @@ export class Slider {
         modeElement.addEventListener('change', function () {
             const self = this as HTMLInputElement;
             localStorage.setItem('mode', (+self.checked).toString());
-            Slider.reRenderSlider();
+            window.location.reload();
         });
     }
 
