@@ -28,7 +28,8 @@ export const FIX_ITEMS: Item[] = [
     {text: 'Ein neues Buch anfangen', emoji: '📖'},
     {
         text: '<a href="https://www.tv-plus.de/bingo-tickets/" target="_blank">Bingo spielen und laut Bingo rufen</a>',
-        emoji: '🎲'
+        emoji: '🎲',
+        dont: true
     },
     {text: 'Ein 5000-Teile Puzzle schaffen', emoji: '🧩'},
     {text: 'An einem Ort in deiner Stadt Müll aufräumen', emoji: '🛢️'},

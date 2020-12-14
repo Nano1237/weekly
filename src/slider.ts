@@ -76,6 +76,9 @@ export class Slider {
         if (item.done) {
             kw.innerText = `${index <= 0 ? 1 : index}. Woche ✅`;
             text.classList.add('done');
+        } else if (item.dont) {
+            kw.innerText = `${index <= 0 ? 1 : index}. Woche ❎`;
+            text.classList.add('done');
         } else {
             kw.innerText = `${index <= 0 ? 1 : index}. Woche ${item.emoji}`;
         }
