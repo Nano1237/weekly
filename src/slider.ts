@@ -32,6 +32,7 @@ export class Slider {
      * Creates a new Slider instance
      */
     public static create() {
+        this.addHideListener();
         this.sliderInstance = new Swiper('[data-container]', {
             initialSlide: this.currentSlideOfWeek,
             slidesPerView: 1,
@@ -42,12 +43,36 @@ export class Slider {
         });
         this.sliderInstance.on('init', () => this.appendDummySlide());
         this.sliderInstance.on('slideChange', () => this.appendDummySlide());
+        this.reRenderSlider();
+        (this.sliderInstance as any).init();
+    }
+
+    private static addHideListener() {
+        const modeElement = document.getElementById('mode');
+        if (+localStorage.getItem('mode') === 1) {
+            modeElement.click();
+        }
+        modeElement.addEventListener('change', function () {
+            const self = this as HTMLInputElement;
+            localStorage.setItem('mode', (+self.checked).toString());
+            Slider.reRenderSlider();
+        });
+    }
+
+    public static reRenderSlider() {
+        document.querySelector('[data-wrapper]').innerHTML = '';
         items
             // We only want the elements until the current week
             .slice(0, this.currentSlideOfWeek)
+            // nullify hidden items. we need the index so a filter would not work
+            .map((item) => {
+                if (+localStorage.getItem('mode') === 1 && (item.dont || item.done)) {
+                    return null;
+                }
+                return item;
+            })
             // Now we want to create a new Slide for this item
             .forEach((item, index) => this.itemToSlide(item, index + 1));
-        (this.sliderInstance as any).init();
     }
 
     /**
@@ -69,7 +94,10 @@ export class Slider {
      * @param item
      * @param index
      */
-    private static itemToSlide(item: Item, index: number) {
+    private static itemToSlide(item: Item | null, index: number) {
+        if (item === null) {
+            return;
+        }
         const kw = Element.createElement('div', 'kw');
         const text = Element.createElement('div', 'text');
         text.innerHTML = item.text;
