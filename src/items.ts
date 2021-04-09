@@ -42,5 +42,7 @@ export const items: Item[] = [
     // 29
     {text: 'Rafting oder Canyoning betreiben', emoji: '⛰️'},
     // 30
+    {text: 'Shuffleboard spielen', emoji: '🥌️'},
+    // 31
     {text: 'Einen Van ausbauen und mit ihm reisen', emoji: '🚐'},
 ];
