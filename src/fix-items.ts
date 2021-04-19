@@ -37,36 +37,22 @@ export const FIX_ITEMS: Item[] = [
         text: '<a href="http://aldar.de/hannover/" target="_blank">In einem syrischen Restaurant essen gehen</a>',
         emoji: '🎁🧆🎁'
     },
-    // 52
     {text: 'Etwas gemeinnütziges tun', emoji: '🍲'},
-    // 53
     {text: 'Insekten essen', emoji: '🐛', done: true},
-    // KW 1 kommt jetzt !!
     {text: 'Einen Tanzkurs besuchen', emoji: '💃🕺'},
-    // 1
     {text: 'Ein Bild fürs eigene Zuhause malen', emoji: '🖼️', done: true},
-    // 2
     {text: 'Bei einem Dinner im Dunkeln mitmachen', emoji: '◼️'},
-    // 3
     {text: 'eine Schlittenfahrt im Schnee machen', emoji: '🛷'},
-    // 4
     {text: 'In einer heißen Quelle baden', emoji: '♨️'},
-    // 5
     {text: 'Die Polarlichter sehen', emoji: '🦄'},
-    // 6
     {text: 'Einen Töpferkurs besuchen', emoji: '🍯'},
-    // 7
     {text: 'Eine Kerze selbermachen', emoji: '🕯️'},
-    // 8
     {text: 'Einen Dankesbrief an eine Firma schreiben', emoji: '', done: true},
-    // 9
     {text: 'In einen Indoor Trampolin-Park gehen', emoji: '🎫'},
-    // 10
     {text: 'Bei einer Pub-Quiznacht mitmachen', emoji: '🍺️'},
-    // 11
     {text: 'Bouldern gehen', emoji: '🧗'},
-    // 12
     {text: 'Auf einem Kamel reiten', emoji: '🐫'},
-    // 13
     {text: 'Auf einer Vespa durch Italien fahren', emoji: '🛵'},
+    {text: 'Zorbing', emoji: '🎱'},
+    {text: 'Eine Zeitkapsel vergraben', emoji: '⏳'},
 ];

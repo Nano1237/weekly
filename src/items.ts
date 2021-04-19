@@ -3,10 +3,6 @@ import {FIX_ITEMS} from "./fix-items";
 
 export const items: Item[] = [
     ...FIX_ITEMS,
-    // 14
-    {text: 'Zorbing', emoji: '🎱'},
-    // 15
-    {text: 'Eine Zeitkapsel vergraben', emoji: '⏳'},
     // 16
     {text: 'Ein Kartenhaus bauen', emoji: '🃏'},
     // 17
@@ -18,31 +14,39 @@ export const items: Item[] = [
     // 20
     {text: 'Milo begrüßen', emoji: '🐶❤️'},
     // 21
-    {text: 'Eine Zigarre rauchen', emoji: '🚬'},
+    {text: 'Makremee machen', emoji: '🧵'},
     // 22
-    {text: 'Shuffleboard spielen', emoji: '🥌️'},
+    {text: 'Eine Zigarre rauchen', emoji: '🚬'},
     // 23
-    {text: 'Zu einen Schiffswrack tauchen', emoji: '🚢'},
+    {text: 'Shuffleboard spielen', emoji: '🥌️'},
     // 24
+    {text: 'Blumen pressen', emoji: ''},
+    // 25
+    {text: 'Origami falten', emoji: ''},
+    // 26
+    {text: 'Mandala malen', emoji: ''},
+    // 27
+    {text: 'Zu einen Schiffswrack tauchen', emoji: '🚢'},
+    // 28
     {
         text: '<a href="https://www.indoor-skydiving.com/UI/Booking/bookPackage.aspx?lang=1&type=30">Indoor Skydiven</a>',
         emoji: '🪂'
     },
-    // 25
+    // 29
     {text: 'Einen Vulkan besteigen', emoji: '🌋'},
-    // 26
+    // 30
     {text: 'Auf einen Eisberg klettern', emoji: '🧊'},
-    // 27
+    // 31
     {
         text: '<a href="https://urlaub.nuernberger-land.de/land-natur/landerlebnisse/imker-fuer-einen-tag.html">Imker für einen Tag</a>',
         emoji: '🐝'
     },//findet sie so lala
-    // 28
+    // 32
     {text: 'Professionelles Gesangstraining buchen', emoji: '🎶'},
-    // 29
+    // 33
     {text: 'Eine Englischsprachschule besuchen', emoji: '🇬🇧'},
-    // 30
+    // 34
     {text: 'Rafting oder Canyoning betreiben', emoji: '⛰️'},
-    // 31
+    // 35
     {text: 'Einen Van ausbauen und mit ihm reisen', emoji: '🚐'},
 ];
