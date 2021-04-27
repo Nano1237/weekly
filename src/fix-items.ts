@@ -32,7 +32,7 @@ export const FIX_ITEMS: Item[] = [
         dont: true
     },
     {text: 'Ein 5000-Teile Puzzle schaffen', emoji: '🧩', done: true},
-    {text: 'An einem Ort in deiner Stadt Müll aufräumen', emoji: '🛢️'},
+    {text: 'An einem Ort in deiner Stadt Müll aufräumen', emoji: '🛢️', done: true},
     {
         text: '<a href="http://aldar.de/hannover/" target="_blank">In einem syrischen Restaurant essen gehen</a>',
         emoji: '🎁🧆🎁'
@@ -55,4 +55,5 @@ export const FIX_ITEMS: Item[] = [
     {text: 'Auf einer Vespa durch Italien fahren', emoji: '🛵'},
     {text: 'Zorbing', emoji: '🎱'},
     {text: 'Eine Zeitkapsel vergraben', emoji: '⏳'},
+    {text: 'Ein Kartenhaus bauen', emoji: '🃏'},
 ];
