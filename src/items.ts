@@ -8,21 +8,23 @@ export const items: Item[] = [
     // 19
     {text: 'Papier selber machen', emoji: '📝'},
     // 20
-    {text: 'Eine Zigarre rauchen', emoji: '🚬'},
+    {text: 'Origami falten', emoji: '🐭'},
     // 21
-    {text: 'Blumen pressen', emoji: ''},
+    {text: 'Blumen pressen', emoji: '🍀'},
     // 22
     {text: 'Milo begrüßen', emoji: '🐶❤️'},
     // 23
-    {text: 'Jemanden mit dem gleichen Namen kontaktieren', emoji: '👭'},
+    {text: 'Mandala malen', emoji: '🖍️'},
     // 24
-    {text: 'Einen Handabdruck in feuchtem Zement hinterlassen️', emoji: '🖐'},
+    {text: 'Einen Brief an ein:e Freund:in schreiben', emoji: '💌'},
+    // 24
+    {text: 'Eine Zigarre rauchen', emoji: '🚬'},
     // 25
     {text: 'Shuffleboard spielen', emoji: '🥌️'},
     // 26
-    {text: 'Origami falten', emoji: ''},
+    {text: 'Einen Handabdruck in feuchtem Zement hinterlassen️', emoji: '🖐'},
     // 27
-    {text: 'Mandala malen', emoji: ''},
+    {text: 'Jemanden mit dem gleichen Namen kontaktieren', emoji: '👭'},
     // 28
     {text: 'Zu einen Schiffswrack tauchen', emoji: '🚢'},
     // 29
