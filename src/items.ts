@@ -3,18 +3,6 @@ import {FIX_ITEMS} from "./fix-items";
 
 export const items: Item[] = [
     ...FIX_ITEMS,
-    // 18
-    {text: 'Makremee machen', emoji: '🧵'},
-    // 19
-    {text: 'Papier selber machen', emoji: '📝'},
-    // 20
-    {text: 'Origami falten', emoji: '🐭'},
-    // 21
-    {text: 'Blumen pressen', emoji: '🍀'},
-    // 22
-    {text: 'Milo begrüßen', emoji: '🐶❤️'},
-    // 23
-    {text: 'Mandala malen', emoji: '🖍️'},
     // 24
     {text: 'Einen Brief an ein:e Freund:in schreiben', emoji: '💌'},
     // 24
@@ -26,7 +14,7 @@ export const items: Item[] = [
     // 27
     {text: 'Jemanden mit dem gleichen Namen kontaktieren', emoji: '👭'},
     // 28
-    {text: 'Zu einen Schiffswrack tauchen', emoji: '🚢'},
+    {text: 'Zu einem Schiffswrack tauchen', emoji: '🚢'},
     // 29
     {
         text: '<a href="https://www.indoor-skydiving.com/UI/Booking/bookPackage.aspx?lang=1&type=30">Indoor Skydiven</a>',
