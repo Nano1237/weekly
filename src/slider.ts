@@ -1,3 +1,4 @@
+// @ts-ignore
 import {Swiper} from 'swiper';
 import {items} from "./items";
 import {Element} from "./element";
@@ -5,6 +6,7 @@ import {Item} from "./item";
 
 export class Slider {
     private static sliderInstance: Swiper;
+    private static readonly startDate: Date = new Date('2020-08-23');
     private static readonly currentSlideOfWeek: number = Slider.getCurrentWeekNumber();
 
     /**
@@ -12,7 +14,7 @@ export class Slider {
      * Either returns 0 if the current week number is negative or it returns the number of weeks passed from the beginning
      */
     private static getCurrentWeekNumber(): number {
-        const weekNow = this.weeksBetween(new Date('2020-08-23'), new Date());
+        const weekNow = this.weeksBetween(this.startDate, new Date());
         return weekNow > 0 ? weekNow : 1;
     }
 
@@ -24,7 +26,7 @@ export class Slider {
      * @returns {number}
      */
     private static weeksBetween(d1: Date, d2: Date): number {
-        return Math.ceil((d2.getTime() - d1.getTime()) / (7 * 24 * 60 * 60 * 1000));
+        return Math.ceil((d2.getTime() - d1.getTime()) / 604800000);
     }
 
     /**
