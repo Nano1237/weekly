@@ -8,7 +8,7 @@ export const FIX_ITEMS: Item[] = [
         done: true
     },
     {
-        text: 'Mithilfe von <a href="https://www.komoot.de/" target="_blank">Komoot</a> eine Tour machen',
+        text: 'Mithilfe von <a href="https://wwwdont.komoot.de/" target="_blank">Komoot</a> eine Tour machen',
         emoji: '🥾',
         done: true
     },
@@ -31,14 +31,14 @@ export const FIX_ITEMS: Item[] = [
         emoji: '🎲',
         dont: true
     },
-    {text: 'Ein 5000-Teile Puzzle schaffen', emoji: '🧩', done: true},
+    {text: 'Ein 5000-Teile Puzzle schaffen', emoji: '🧩', dont: true},
     {text: 'An einem Ort in deiner Stadt Müll aufräumen', emoji: '🛢️', done: true},
     {
         text: '<a href="http://aldar.de/hannover/" target="_blank">In einem syrischen Restaurant essen gehen</a>',
         emoji: '🎁🧆🎁'
     },
     {text: 'Etwas gemeinnütziges tun', emoji: '🍲'},
-    {text: 'Insekten essen', emoji: '🐛', done: true},
+    {text: 'Insekten essen', emoji: '🐛', dont: true},
     {text: 'Einen Tanzkurs besuchen', emoji: '💃🕺'},
     {text: 'Ein Bild fürs eigene Zuhause malen', emoji: '🖼️', done: true},
     {text: 'Bei einem Dinner im Dunkeln mitmachen', emoji: '◼️'},
@@ -47,7 +47,7 @@ export const FIX_ITEMS: Item[] = [
     {text: 'Die Polarlichter sehen', emoji: '🦄'},
     {text: 'Einen Töpferkurs besuchen', emoji: '🍯'},
     {text: 'Eine Kerze selbermachen', emoji: '🕯️'},
-    {text: 'Einen Dankesbrief an eine Firma schreiben', emoji: '', done: true},
+    {text: 'Einen Dankesbrief an eine Firma schreiben', emoji: '', dont: true},
     {text: 'In einen Indoor Trampolin-Park gehen', emoji: '🎫'},
     {text: 'Bei einer Pub-Quiznacht mitmachen', emoji: '🍺️', done: true},
     {text: 'Bouldern gehen', emoji: '🧗'},
@@ -62,4 +62,5 @@ export const FIX_ITEMS: Item[] = [
     {text: 'Blumen pressen', emoji: '🍀'},
     {text: 'Milo begrüßen', emoji: '🐶❤️', done: true},
     {text: 'Mandala malen', emoji: '🖍️'},
+    {text: 'Einen Brief an ein:e Freund:in schreiben', emoji: '💌'},
 ];

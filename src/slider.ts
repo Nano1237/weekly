@@ -100,28 +100,40 @@ export class Slider {
         if (item === null) {
             return;
         }
-        const kw = Element.createElement('div', 'kw');
+        const cw = Element.createElement('div', 'kw');
         const text = Element.createElement('div', 'text');
         text.innerHTML = item.text;
         if (item.done) {
-            kw.innerText = `${index <= 0 ? 1 : index}. Woche ✅`;
-            text.classList.add('done');
+            this.setSlideDone(text, cw, index, '✅')
         } else if (item.dont) {
-            kw.innerText = `${index <= 0 ? 1 : index}. Woche ❎`;
-            text.classList.add('done');
+            this.setSlideDone(text, cw, index, '❎')
         } else {
-            kw.innerText = `${index <= 0 ? 1 : index}. Woche ${item.emoji}`;
+            cw.innerText = `${index <= 0 ? 1 : index}. Woche ${item.emoji}`;
         }
         // animate the slide if it has an emoji
         if (item.emoji !== '') {
-            kw.classList.add('animated');
+            cw.classList.add('animated');
             text.classList.add('animated');
         }
         const container = Element.createElement('div', 'item-wrapper');
         const slide = Element.createElement('div', 'swiper-slide');
-        container.append(kw, text);
+        container.append(cw, text);
         slide.appendChild(container);
 
         document.querySelector('[data-wrapper]').appendChild(slide);
+    }
+
+    /**
+     * @description
+     * Updates the calendar weeks title, icon and class
+     * @param text
+     * @param cw
+     * @param index
+     * @param icon
+     * @private
+     */
+    private static setSlideDone(text: HTMLElement, cw: HTMLElement, index: number, icon: string): void {
+        cw.innerText = `${index <= 0 ? 1 : index}. Woche ${icon}`;
+        text.classList.add('done');
     }
 }

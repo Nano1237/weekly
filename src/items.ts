@@ -4,8 +4,6 @@ import {FIX_ITEMS} from "./fix-items";
 export const items: Item[] = [
     ...FIX_ITEMS,
     // 24
-    {text: 'Einen Brief an ein:e Freund:in schreiben', emoji: '💌'},
-    // 24
     {text: 'Eine Zigarre rauchen', emoji: '🚬'},
     // 25
     {text: 'Shuffleboard spielen', emoji: '🥌️'},
