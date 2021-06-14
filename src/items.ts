@@ -1,6 +1,11 @@
 import {Item} from './item';
 import {FIX_ITEMS} from "./fix-items";
 
+/**
+ * @description
+ * All Items that are either in the future and and can thous be reordered, replaced or removed are contained in this array.
+ * All Fixed items are prepended.
+ */
 export const items: Item[] = [
     ...FIX_ITEMS,
     // 24

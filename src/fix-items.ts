@@ -1,5 +1,9 @@
 import {Item} from "./item";
 
+/**
+ * @description
+ * All items that are already shown and cant be removed, replaced or reordered.
+ */
 export const FIX_ITEMS: Item[] = [
     {text: 'Nach Rügen fahren und dort mit einem VW Caddy Maxi Campen', emoji: '🏕️', done: true},
     {

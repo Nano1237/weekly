@@ -6,8 +6,25 @@ import {Item} from "./item";
 
 export class Slider {
     private static sliderInstance: Swiper;
+    /**
+     * @description
+     * The date from which the slider output calculation should start.
+     * For every week beginning with this date a new item will be shown.
+     * @private
+     */
     private static readonly startDate: Date = new Date('2020-08-23');
+    /**
+     * This property contains the week number that is currently shown and thous also the last week entry visible for the user
+     * @private
+     */
     private static readonly currentSlideOfWeek: number = Slider.getCurrentWeekNumber();
+    /**
+     * @description
+     * This index is used to create the dummy slides with the corect week number.
+     * If items are hidden, a wrong slide amound will be genereated and thus a wrong week number at the new position.
+     * @private
+     */
+    private static dummySlideIndex: number = null;
 
     /**
      * @description
@@ -33,7 +50,7 @@ export class Slider {
      * @description
      * Creates a new Slider instance
      */
-    public static create() {
+    public static create(): void {
         this.addHideListener();
         this.sliderInstance = new Swiper('[data-container]', {
             initialSlide: this.currentSlideOfWeek,
@@ -49,7 +66,13 @@ export class Slider {
         (this.sliderInstance as any).init();
     }
 
-    private static addHideListener() {
+    /**
+     * @description
+     * The user can switch between items marked as done and all items.
+     * This method registers the event listener of the switch.
+     * @private
+     */
+    private static addHideListener(): void {
         const modeElement = document.getElementById('mode');
         if (+localStorage.getItem('mode') === 1) {
             modeElement.click();
@@ -61,12 +84,16 @@ export class Slider {
         });
     }
 
-    public static reRenderSlider() {
-        document.querySelector('[data-wrapper]').innerHTML = '';
+    /**
+     * @description
+     * Clears all slide elements and creates new slides for all items inside the "items" constant
+     */
+    public static reRenderSlider(): void {
+        this.getDataWrapper().innerHTML = '';
         items
-            // We only want the elements until the current week
+            // We only want the elements until the current week. discard other pls.
             .slice(0, this.currentSlideOfWeek)
-            // nullify hidden items. we need the index so a filter would not work
+            // nullify hidden items. we need the index so an array filter would not work
             .map((item) => {
                 if (+localStorage.getItem('mode') === 1 && (item.dont || item.done)) {
                     return null;
@@ -81,12 +108,15 @@ export class Slider {
      * @description
      * Creates a new Slide at the end of the slider with a incrementing week number and "???" as text
      */
-    private static appendDummySlide() {
+    private static appendDummySlide(): void {
+        // Only append new dummy slides if the user nearly reached the end
         if (this.sliderInstance.realIndex < this.sliderInstance.slides.length - 1) {
-            // Only append new dummy slides if the user nearly reached the end
             return;
         }
-        this.itemToSlide({text: '???', emoji: ''}, this.sliderInstance.slides.length + 1)
+        if (this.dummySlideIndex === null) {
+            this.dummySlideIndex = this.currentSlideOfWeek;
+        }
+        this.itemToSlide({text: '???', emoji: ''}, ++this.dummySlideIndex)
         this.sliderInstance.update();
     }
 
@@ -96,44 +126,75 @@ export class Slider {
      * @param item
      * @param index
      */
-    private static itemToSlide(item: Item | null, index: number) {
+    private static itemToSlide(item: Item | null, index: number): void {
+        // Skip nullified items (caused by the hidden switch for done/dont items)
         if (item === null) {
             return;
         }
         const cw = Element.createElement('div', 'kw');
         const text = Element.createElement('div', 'text');
         text.innerHTML = item.text;
-        if (item.done) {
-            this.setSlideDone(text, cw, index, '✅')
-        } else if (item.dont) {
-            this.setSlideDone(text, cw, index, '❎')
-        } else {
-            cw.innerText = `${index <= 0 ? 1 : index}. Woche ${item.emoji}`;
-        }
+        this.setCalenderWeek(item, text, cw, index);
         // animate the slide if it has an emoji
         if (item.emoji !== '') {
             cw.classList.add('animated');
             text.classList.add('animated');
         }
-        const container = Element.createElement('div', 'item-wrapper');
-        const slide = Element.createElement('div', 'swiper-slide');
-        container.append(cw, text);
-        slide.appendChild(container);
 
-        document.querySelector('[data-wrapper]').appendChild(slide);
+        this.addHtmlToSlider(cw, text);
     }
 
     /**
      * @description
-     * Updates the calendar weeks title, icon and class
+     * Appends the calendar week and the text item to the slider
+     * @param calendarWeekElement
+     * @param textElement
+     * @private
+     */
+    private static addHtmlToSlider(calendarWeekElement: HTMLElement, textElement: HTMLElement): void {
+        const container = Element.createElement('div', 'item-wrapper');
+        container.append(calendarWeekElement, textElement);
+        const slide = Element.createElement('div', 'swiper-slide');
+        slide.appendChild(container);
+        this.getDataWrapper().appendChild(slide);
+    }
+
+    /**
+     * @description
+     * Sets the calendar week of the passed item either as the correct week incl. emoji, or as done or dont
+     * @param item
      * @param text
      * @param cw
+     * @param index
+     * @private
+     */
+    private static setCalenderWeek(item: Item, text: HTMLElement, cw: HTMLElement, index: number): void {
+        // If the item is not done or dont, set the passed icon. otherwise the done/dont empji and a done class
+        if (!(item.done || item.dont)) {
+            return this.setCalendarWeekContent(cw, index, item.emoji);
+        }
+        this.setCalendarWeekContent(cw, index, item.done ? '✅' : '❎');
+        text.classList.add('done');
+    }
+
+    /**
+     * @description
+     * Writes the content to the passed calendar week element
+     * @param calendarWeekElement
      * @param index
      * @param icon
      * @private
      */
-    private static setSlideDone(text: HTMLElement, cw: HTMLElement, index: number, icon: string): void {
-        cw.innerText = `${index <= 0 ? 1 : index}. Woche ${icon}`;
-        text.classList.add('done');
+    private static setCalendarWeekContent(calendarWeekElement: HTMLElement, index: number, icon: string): void {
+        calendarWeekElement.innerText = `${index <= 0 ? 1 : index}. Woche ${icon}`;
+    }
+
+    /**
+     * @description
+     * Returns the wrapper element containing all slides
+     * @private
+     */
+    private static getDataWrapper(): HTMLElement {
+        return document.querySelector('[data-wrapper]');
     }
 }
