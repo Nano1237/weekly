@@ -71,4 +71,5 @@ export const FIX_ITEMS: Item[] = [
     {text: 'Shuffleboard spielen', emoji: '🥌️'},
     {text: 'Einen Handabdruck in feuchtem Zement hinterlassen️', emoji: '🖐'},
     {text: 'Jemanden mit dem gleichen Namen kontaktieren', emoji: '👭'},
+    {text: 'Gin selber machen', emoji: '🍸'},
 ];
