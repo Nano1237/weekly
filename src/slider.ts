@@ -3,6 +3,7 @@ import {Swiper} from 'swiper';
 import {items} from "./items";
 import {Element} from "./element";
 import {Item} from "./item";
+import {DateTime} from "./date-time";
 
 /**
  * The main app functionality is implemented in this class.
@@ -13,40 +14,22 @@ export class Slider {
      */
     private static sliderInstance: Swiper;
     /**
-     * @description
+     * This property contains the week number that is currently shown and thous also the last week entry visible for the user
+     *
      * The date from which the slider output calculation should start.
      * For every week beginning with this date a new item will be shown.
+     *
+     * The 28. August 2020 was a Sunday.
+     * Every Sunday after that, a new item will be shown.
+     * If the new entry should be shown at any other day of the week, the date has to be adjusted accordingly.
      */
-    private static readonly startDate: Date = new Date('2020-08-23');
-    /**
-     * This property contains the week number that is currently shown and thous also the last week entry visible for the user
-     */
-    private static readonly currentSlideOfWeek: number = Slider.getCurrentWeekNumber();
+    private static readonly currentWeek: number = DateTime.getCurrentWeekNumber(new Date('2020-08-23'));
     /**
      * @description
      * This index is used to create the dummy slides with the corect week number.
-     * If items are hidden, a wrong slide amound will be genereated and thus a wrong week number at the new position.
+     * If items are hidden, a wrong slider number will be genereated and thus a wrong week number at the new position.
      */
     private static dummySlideIndex: number = null;
-
-    /**
-     * @description
-     * Either returns 0 if the current week number is negative or it returns the number of weeks passed from the beginning
-     */
-    private static getCurrentWeekNumber(): number {
-        const weekNow = this.weeksBetween(this.startDate, new Date());
-        return weekNow > 0 ? weekNow : 1;
-    }
-
-    /**
-     * @description
-     * Returns the passed weeks between two dates
-     * @param start
-     * @param end
-     */
-    private static weeksBetween(start: Date, end: Date): number {
-        return Math.ceil((end.getTime() - start.getTime()) / 604800000);
-    }
 
     /**
      * @description
@@ -55,7 +38,7 @@ export class Slider {
     public static create(): void {
         this.addHideListener();
         this.sliderInstance = new Swiper('[data-container]', {
-            initialSlide: this.currentSlideOfWeek,
+            initialSlide: this.currentWeek,
             slidesPerView: 1,
             init: false,
             keyboard: {
@@ -93,7 +76,7 @@ export class Slider {
         this.getDataWrapper().innerHTML = '';
         items
             // We only want the elements until the current week. discard other pls.
-            .slice(0, this.currentSlideOfWeek)
+            .slice(0, this.currentWeek)
             // nullify hidden items. we need the index so an array filter would not work
             .map((item) => {
                 if (+localStorage.getItem('mode') === 1 && (item.dont || item.done)) {
@@ -115,7 +98,7 @@ export class Slider {
             return;
         }
         if (this.dummySlideIndex === null) {
-            this.dummySlideIndex = this.currentSlideOfWeek;
+            this.dummySlideIndex = this.currentWeek;
         }
         this.itemToSlide({text: '???', emoji: ''}, ++this.dummySlideIndex)
         this.sliderInstance.update();
