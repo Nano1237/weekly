@@ -4,25 +4,28 @@ import {items} from "./items";
 import {Element} from "./element";
 import {Item} from "./item";
 
+/**
+ * The main app functionality is implemented in this class.
+ */
 export class Slider {
+    /**
+     * A local property containing the Swiper instance to be accessble across the static methods.
+     */
     private static sliderInstance: Swiper;
     /**
      * @description
      * The date from which the slider output calculation should start.
      * For every week beginning with this date a new item will be shown.
-     * @private
      */
     private static readonly startDate: Date = new Date('2020-08-23');
     /**
      * This property contains the week number that is currently shown and thous also the last week entry visible for the user
-     * @private
      */
     private static readonly currentSlideOfWeek: number = Slider.getCurrentWeekNumber();
     /**
      * @description
      * This index is used to create the dummy slides with the corect week number.
      * If items are hidden, a wrong slide amound will be genereated and thus a wrong week number at the new position.
-     * @private
      */
     private static dummySlideIndex: number = null;
 
@@ -38,12 +41,11 @@ export class Slider {
     /**
      * @description
      * Returns the passed weeks between two dates
-     * @param d1
-     * @param d2
-     * @returns {number}
+     * @param start
+     * @param end
      */
-    private static weeksBetween(d1: Date, d2: Date): number {
-        return Math.ceil((d2.getTime() - d1.getTime()) / 604800000);
+    private static weeksBetween(start: Date, end: Date): number {
+        return Math.ceil((end.getTime() - start.getTime()) / 604800000);
     }
 
     /**
@@ -63,7 +65,7 @@ export class Slider {
         this.sliderInstance.on('init', () => this.appendDummySlide());
         this.sliderInstance.on('slideChange', () => this.appendDummySlide());
         this.reRenderSlider();
-        (this.sliderInstance as any).init();
+        this.sliderInstance.init();
     }
 
     /**
@@ -73,13 +75,12 @@ export class Slider {
      * @private
      */
     private static addHideListener(): void {
-        const modeElement = document.getElementById('mode');
+        const modeElement = document.getElementById('mode') as HTMLInputElement;
         if (+localStorage.getItem('mode') === 1) {
             modeElement.click();
         }
         modeElement.addEventListener('change', function () {
-            const self = this as HTMLInputElement;
-            localStorage.setItem('mode', (+self.checked).toString());
+            localStorage.setItem('mode', (+this.checked).toString());
             window.location.reload();
         });
     }
@@ -149,7 +150,6 @@ export class Slider {
      * Appends the calendar week and the text item to the slider
      * @param calendarWeekElement
      * @param textElement
-     * @private
      */
     private static addHtmlToSlider(calendarWeekElement: HTMLElement, textElement: HTMLElement): void {
         const container = Element.createElement('div', 'item-wrapper');
@@ -166,11 +166,10 @@ export class Slider {
      * @param text
      * @param cw
      * @param index
-     * @private
      */
     private static setCalenderWeek(item: Item, text: HTMLElement, cw: HTMLElement, index: number): void {
         // If the item is not done or dont, set the passed icon. otherwise the done/dont empji and a done class
-        if (!(item.done || item.dont)) {
+        if (!item.done && !item.dont) {
             return this.setCalendarWeekContent(cw, index, item.emoji);
         }
         this.setCalendarWeekContent(cw, index, item.done ? '✅' : '❎');
@@ -183,7 +182,6 @@ export class Slider {
      * @param calendarWeekElement
      * @param index
      * @param icon
-     * @private
      */
     private static setCalendarWeekContent(calendarWeekElement: HTMLElement, index: number, icon: string): void {
         calendarWeekElement.innerText = `${index <= 0 ? 1 : index}. Woche ${icon}`;
@@ -192,7 +190,6 @@ export class Slider {
     /**
      * @description
      * Returns the wrapper element containing all slides
-     * @private
      */
     private static getDataWrapper(): HTMLElement {
         return document.querySelector('[data-wrapper]');
