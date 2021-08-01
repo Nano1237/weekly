@@ -72,4 +72,6 @@ export const FIX_ITEMS: Item[] = [
     {text: 'Einen Handabdruck in feuchtem Zement hinterlassen️', emoji: '🖐'},
     {text: 'Jemanden mit dem gleichen Namen kontaktieren', emoji: '👭'},
     {text: 'Gin selber machen', emoji: '🍸'},
+    {text: 'Unseren neuen Van anmelden', emoji: '🚐❤️'},
+    {text: 'Zu einem Schiffswrack tauchen', emoji: '🚢'},
 ];

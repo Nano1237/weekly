@@ -10,10 +10,6 @@ import {FIX_ITEMS} from "./fix-items";
  */
 export const items: Item[] = [
     ...FIX_ITEMS,
-    // 29
-    {text: 'Unseren neuen Van anmelden', emoji: '🚐❤️'},
-    // 30
-    {text: 'Zu einem Schiffswrack tauchen', emoji: '🚢'},
     // 31
     {
         text: '<a href="https://www.indoor-skydiving.com/UI/Booking/bookPackage.aspx?lang=1&type=30">Indoor Skydiven</a>',
@@ -35,5 +31,5 @@ export const items: Item[] = [
     // 37
     {text: 'Rafting oder Canyoning betreiben', emoji: '⛰️'},
     // 38
-    {text: 'Einen Van ausbauen und mit ihm reisen', emoji: '🚐'},
+    {text: 'Mit einem ausgebauten Van verreisen', emoji: '🚐'},
 ];
