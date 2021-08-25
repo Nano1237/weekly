@@ -18,6 +18,8 @@ export const items: Item[] = [
     // 32
     {text: 'Einen Vulkan besteigen', emoji: '🌋'},
     // 33
+    {text: 'Unseren Jahrestag feiern!', emoji: '❤️'},
+    // 33
     {text: 'Auf einen Eisberg klettern', emoji: '🧊'},
     // 34
     {
