@@ -10,28 +10,14 @@ import {FIX_ITEMS} from "./fix-items";
  */
 export const items: Item[] = [
     ...FIX_ITEMS,
-    // 31
-    {
-        text: '<a href="https://www.indoor-skydiving.com/UI/Booking/bookPackage.aspx?lang=1&type=30">Indoor Skydiven</a>',
-        emoji: '🪂'
-    },
-    // 32
-    {text: 'Einen Vulkan besteigen', emoji: '🌋'},
-    // 33
-    {text: 'Unseren Jahrestag feiern!', emoji: '❤️'},
-    // 33
-    {text: 'Auf einen Eisberg klettern', emoji: '🧊'},
-    // 34
-    {
-        text: '<a href="https://urlaub.nuernberger-land.de/land-natur/landerlebnisse/imker-fuer-einen-tag.html">Imker für einen Tag</a>',
-        emoji: '🐝'
-    },//findet sie so lala
-    // 35
-    {text: 'Professionelles Gesangstraining buchen', emoji: '🎶'},
-    // 36
-    {text: 'Eine Englischsprachschule besuchen', emoji: '🇬🇧'},
     // 37
+    {text: 'Eine Englischsprachschule besuchen', emoji: '🇬🇧'},
+    // 35
     {text: 'Rafting oder Canyoning betreiben', emoji: '⛰️'},
-    // 38
-    {text: 'Mit einem ausgebauten Van verreisen', emoji: '🚐'},
+    // 35
+    {text: 'Professionelles Gesangstraining besuchen', emoji: '🎶'},
+    // 34
+    {text: 'Auf einen Eisberg klettern', emoji: '🧊'},
+    // 39
+    {text: 'Mit unserem Van verreisen', emoji: '🚐'},
 ];

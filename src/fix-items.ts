@@ -74,4 +74,10 @@ export const FIX_ITEMS: Item[] = [
     {text: 'Gin selber machen', emoji: '🍸'},
     {text: 'Unseren neuen Van anmelden', emoji: '🚐❤️'},
     {text: 'Zu einem Schiffswrack tauchen', emoji: '🚢'},
+    {
+        text: '<a href="https://www.indoor-skydiving.com/UI/Booking/bookPackage.aspx?lang=1&type=30">Indoor Skydiven</a>',
+        emoji: '🪂'
+    },
+    {text: 'Einen Vulkan besteigen', emoji: '🌋'},
+    {text: 'Unseren Jahrestag feiern!', emoji: '❤️'},
 ];
