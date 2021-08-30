@@ -72,12 +72,13 @@ export const FIX_ITEMS: Item[] = [
     {text: 'Einen Handabdruck in feuchtem Zement hinterlassen️', emoji: '🖐'},
     {text: 'Jemanden mit dem gleichen Namen kontaktieren', emoji: '👭'},
     {text: 'Gin selber machen', emoji: '🍸'},
-    {text: 'Unseren neuen Van anmelden', emoji: '🚐❤️'},
+    {text: 'Unseren neuen Van anmelden', emoji: '🚐❤️', done: true},
     {text: 'Zu einem Schiffswrack tauchen', emoji: '🚢'},
     {
         text: '<a href="https://www.indoor-skydiving.com/UI/Booking/bookPackage.aspx?lang=1&type=30">Indoor Skydiven</a>',
         emoji: '🪂'
     },
     {text: 'Einen Vulkan besteigen', emoji: '🌋'},
-    {text: 'Unseren Jahrestag feiern!', emoji: '❤️'},
+    {text: 'Unseren Jahrestag feiern!', emoji: '❤️', done: true},
+    {text: 'Eine Englischsprachschule besuchen', emoji: '🇬🇧'},
 ];

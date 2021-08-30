@@ -10,8 +10,6 @@ import {FIX_ITEMS} from "./fix-items";
  */
 export const items: Item[] = [
     ...FIX_ITEMS,
-    // 37
-    {text: 'Eine Englischsprachschule besuchen', emoji: '🇬🇧'},
     // 35
     {text: 'Rafting oder Canyoning betreiben', emoji: '⛰️'},
     // 35
