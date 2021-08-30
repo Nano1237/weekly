@@ -30,6 +30,11 @@ export class Slider {
      * If items are hidden, a wrong slider number will be genereated and thus a wrong week number at the new position.
      */
     private static dummySlideIndex: number = null;
+    /**
+     * @description
+     * This boolean is updates when the slider has appended the last slide if the user already seen all entries.
+     */
+    private static lastSlideAppended: boolean;
 
     /**
      * @description
@@ -93,12 +98,22 @@ export class Slider {
      * Creates a new Slide at the end of the slider with a incrementing week number and "???" as text
      */
     private static appendDummySlide(): void {
+        if (this.dummySlideIndex === null) {
+            this.dummySlideIndex = this.currentWeek;
+        }
+        // Appends the last slide if the current week exceeds the amount of entries.
+        // also stop the slider from appending additional "???" items
+        if (this.currentWeek >= items.length) {
+            if (!this.lastSlideAppended) {
+                this.itemToSlide({text: 'Das war es erst einmal mit Einträgen ...', emoji: ''}, ++this.dummySlideIndex)
+                this.lastSlideAppended = true;
+                this.sliderInstance.update();
+            }
+            return;
+        }
         // Only append new dummy slides if the user nearly reached the end
         if (this.sliderInstance.realIndex < this.sliderInstance.slides.length - 1) {
             return;
-        }
-        if (this.dummySlideIndex === null) {
-            this.dummySlideIndex = this.currentWeek;
         }
         this.itemToSlide({text: '???', emoji: ''}, ++this.dummySlideIndex)
         this.sliderInstance.update();
