@@ -42,10 +42,8 @@ export const items: Item[] = [
     {text: 'Auf einen Eisberg klettern', emoji: '🧊'},
     // 51 ⚠️
     {text: 'Silvester mit Milo verbringen', emoji: '🎇'},
-    // 52
-    {text: 'Schlittschuhlaufen', emoji: '⛸️'},
     // 1
-    {text: 'Eine Molekularküche besuchen', emoji: '⚛️'},
+    {text: 'Eine Molekularküche besuchen', emoji: '⚛️'}, // würde sie machen aber findet sie lala
     // 2
     {text: 'Schnaps selber brennen', emoji: '🍷'},
     // 3
@@ -59,11 +57,11 @@ export const items: Item[] = [
     // 7
     {text: 'Als reich ausgeben und die teuerste Immobilie der Stadt besichtigen', emoji: '💰'},
     // 8
-    {text: 'Reiten', emoji: '🏇'},
+    {text: 'Reiten', emoji: '🏇'}, // würde sie machen aber findet sie lala
     // 9
     {text: 'In einer Cocktailbar Drinks durchprobieren', emoji: '🍹'},
     // 10
-    {text: 'Einen Tesla probefahren', emoji: '🚘'},
+    {text: 'Einen Tesla probefahren', emoji: '🚘'}, // würde sie machen aber findet sie lala
     // 11
     {text: 'Ein Schießtraining besuchen', emoji: '🔫'},
     // 12
