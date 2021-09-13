@@ -6,23 +6,11 @@ import {Item} from "./item";
  */
 export const FIX_ITEMS: Item[] = [
     {text: 'Nach Rügen fahren und dort mit einem VW Caddy Maxi Campen', emoji: '🏕️', done: true},
-    {
-        text: 'Eine Sache machen, die „nur ein Kind“ machen würde (z. B. Pfützenspringen, Scheibe Wurst an der Theke erfragen oder mit Murmeln spielen)',
-        emoji: '🧒',
-        done: true
-    },
-    {
-        text: 'Mithilfe von <a href="https://wwwdont.komoot.de/" target="_blank">Komoot</a> eine Tour machen',
-        emoji: '🥾',
-        done: true
-    },
+    {text: 'Im Regen in Pfützen springen', emoji: '🧒', done: true},
+    {text: 'Wandern im Deister', emoji: '🥾', done: true},
     {text: 'Urlaub auf einem Hausboot machen', emoji: '🚤', done: true},
     {text: 'Ein Kinderbild nachstellen', emoji: '🖼️'},
-    {
-        text: 'In Wilhelmshaven mit einem Segelschiff fahren',
-        emoji: '⛵',
-        done: true
-    },
+    {text: 'In Wilhelmshaven mit einem Segelschiff fahren', emoji: '⛵', done: true},
     {text: 'Einem Escape-Room entkommen', emoji: '🗝️', done: true},
     {text: 'Bei einem Craftbeer-Tasting mitmachen', emoji: '🍺'},
     {text: 'Einen Telefonstreich machen', emoji: '📞'},
@@ -30,18 +18,10 @@ export const FIX_ITEMS: Item[] = [
     {text: 'Ein Lied im Radio wünschen', emoji: '📻'},
     {text: 'Anfangen ein Instrument zu lernen', emoji: '🎸'},
     {text: 'Ein neues Buch anfangen', emoji: '📖', done: true},
-    {
-        text: '<a href="https://www.tv-plus.de/bingo-tickets/" target="_blank">Bingo spielen und laut Bingo rufen</a>',
-        emoji: '🎲',
-        dont: true
-    },
+    {text: 'Bingo spielen und laut Bingo rufen', emoji: '🎲', dont: true},
     {text: 'Ein 5000-Teile Puzzle schaffen', emoji: '🧩', dont: true},
     {text: 'An einem Ort in deiner Stadt Müll aufräumen', emoji: '🛢️', done: true},
-    {
-        text: '<a href="http://aldar.de/hannover/" target="_blank">In einem syrischen Restaurant essen gehen</a>',
-        emoji: '🎁🧆🎁',
-        done: true
-    },
+    {text: 'In einem syrischen Restaurant essen gehen', emoji: '🧆', done: true},
     {text: 'Etwas gemeinnütziges tun', emoji: '🍲'},
     {text: 'Insekten essen', emoji: '🐛', dont: true},
     {text: 'Einen Tanzkurs besuchen', emoji: '💃🕺'},
