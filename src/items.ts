@@ -12,10 +12,8 @@ import {FIX_ITEMS} from "./fix-items";
  */
 export const items: Item[] = [
     ...FIX_ITEMS,
-    // 37
-    {text: 'Unser erste Date wiederholen', emoji: '🍦'},
-    // 38
-    {text: 'Schlittschuhlaufen', emoji: '⛸️'},
+    // 43
+    {text: 'Neue Restaurants auszuprobieren', emoji: '🍢'},
     // 39
     {text: 'Professionelles Gesangstraining besuchen', emoji: '🎶'},
     // 40
@@ -24,8 +22,6 @@ export const items: Item[] = [
     {text: 'Mit unserem Van nach Kroatien reisen', emoji: '🚐'},
     // 42
     {text: 'Einen Tauchkurs buchen', emoji: '🤿'},
-    // 43
-    {text: 'Neue Restaurants auszuprobieren', emoji: '🍢'},
     // 44
     {text: 'Eine Pyjama-Party veranstalten', emoji: '🍀'},
     // 45
@@ -79,4 +75,5 @@ export const items: Item[] = [
     {text: 'Windsurfing', emoji: '🏄'},
     {text: 'Höhlentrekking', emoji: '🥾'},
     {text: 'Ein Ritteressen besuchen', emoji: '🛡️'},
+    {text: 'Mit Milo nach Sankt Peter-Ording fahren', emoji: '🐶'},
 ];
