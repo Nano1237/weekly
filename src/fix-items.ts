@@ -66,4 +66,5 @@ export const FIX_ITEMS: Item[] = [
     {text: 'Zu einem Feld fahren und einen Blumenstrauß binden', emoji: '💐'},
     {text: 'Unser erste Date wiederholen', emoji: '🍦', done: true},
     {text: 'Schlittschuhlaufen', emoji: '⛸️'},
+    {text: 'Neue Restaurants ausprobieren', emoji: '🍢'},
 ];
