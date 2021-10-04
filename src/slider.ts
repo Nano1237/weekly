@@ -1,9 +1,9 @@
 // @ts-ignore
 import {Swiper} from 'swiper';
-import {items} from "./items";
-import {Element} from "./element";
-import {Item} from "./item";
-import {DateTime} from "./date-time";
+import {items} from './items';
+import {Element} from './element';
+import {Item} from './item';
+import {DateTime} from './date-time';
 
 /**
  * The main app functionality is implemented in this class.
@@ -75,15 +75,15 @@ export class Slider {
 
     /**
      * @description
-     * Clears all slide elements and creates new slides for all items inside the "items" constant
+     * Clears all slide elements and creates new slides for all items inside the 'items' constant
      */
     public static reRenderSlider(): void {
         this.getDataWrapper().innerHTML = '';
-        items
+        this.getItemsOrdered()
             // We only want the elements until the current week. discard other pls.
             .slice(0, this.currentWeek)
             // nullify hidden items. we need the index so an array filter would not work
-            .map((item) => {
+            .map(item => {
                 if (+localStorage.getItem('mode') === 1 && (item.dont || item.done)) {
                     return null;
                 }
@@ -94,15 +94,33 @@ export class Slider {
     }
 
     /**
+     * Returns the global items array ordered by the 'order' property of the items
+     */
+    private static getItemsOrdered(): Item[] {
+        return items
+            // Add an order of infinity if not already provided
+            .map(item => {
+                if (typeof item.order === 'undefined') {
+                    item.order = Infinity;
+                }
+                return item;
+            })
+            // sort the items based by their order
+            .sort((a, b) => {
+                return a.order > b.order ? 1 : (b.order > a.order) ? -1 : 0;
+            });
+    }
+
+    /**
      * @description
-     * Creates a new Slide at the end of the slider with a incrementing week number and "???" as text
+     * Creates a new Slide at the end of the slider with a incrementing week number and '???' as text
      */
     private static appendDummySlide(): void {
         if (this.dummySlideIndex === null) {
             this.dummySlideIndex = this.currentWeek;
         }
         // Appends the last slide if the current week exceeds the amount of entries.
-        // also stop the slider from appending additional "???" items
+        // also stop the slider from appending additional '???' items
         if (this.currentWeek >= items.length) {
             if (!this.lastSlideAppended) {
                 this.itemToSlide({text: 'Das war es erst einmal mit Einträgen ...', emoji: ''}, ++this.dummySlideIndex)
