@@ -5,7 +5,12 @@ import {Item} from "./item";
  * All items that are already shown and cant be removed, replaced or reordered.
  */
 export const FIX_ITEMS: Item[] = [
-    // DONE / DON'T
+    // DON'T
+    {text: 'Bingo spielen und laut Bingo rufen', emoji: '🎲', dont: true, order: 14},
+    {text: 'Ein 5000-Teile Puzzle schaffen', emoji: '🧩', dont: true, order: 15},
+    {text: 'Insekten essen', emoji: '🐛', dont: true, order: 19},
+    {text: 'Einen Dankesbrief an eine Firma schreiben', emoji: '', dont: true, order: 28},
+    // DONE
     {text: 'Nach Rügen fahren und dort mit einem VW Caddy Maxi Campen', emoji: '🏕️', done: true, order: 1},
     {text: 'Im Regen in Pfützen springen', emoji: '🧒', done: true, order: 2},
     {text: 'Wandern im Deister', emoji: '🥾', done: true, order: 3},
@@ -14,13 +19,9 @@ export const FIX_ITEMS: Item[] = [
     {text: 'Einem Escape-Room entkommen', emoji: '🗝️', done: true, order: 7},
     {text: 'Bei einer Halloween-Kostüm-Party den ersten Preis gewinnen!', emoji: '🎃', done: true, order: 10},
     {text: 'Ein neues Buch anfangen', emoji: '📖', done: true, order: 13},
-    {text: 'Bingo spielen und laut Bingo rufen', emoji: '🎲', dont: true, order: 14},
-    {text: 'Ein 5000-Teile Puzzle schaffen', emoji: '🧩', dont: true, order: 15},
     {text: 'An einem Ort in deiner Stadt Müll aufräumen', emoji: '🛢️', done: true, order: 16},
     {text: 'In einem syrischen Restaurant essen gehen', emoji: '🧆', done: true, order: 17},
-    {text: 'Insekten essen', emoji: '🐛', dont: true, order: 19},
     {text: 'Ein Bild fürs eigene Zuhause malen', emoji: '🖼️', done: true, order: 21},
-    {text: 'Einen Dankesbrief an eine Firma schreiben', emoji: '', dont: true, order: 28},
     {text: 'Bei einer Pub-Quiznacht mitmachen', emoji: '🍺️', done: true, order: 30},
     {text: 'Makremee machen', emoji: '🧵', done: true, order: 37},
     {text: 'Papier selber machen', emoji: '📝', done: true, order: 38},
@@ -31,16 +32,17 @@ export const FIX_ITEMS: Item[] = [
     {text: 'Bei einer Überraschungsparty mitmachen', emoji: '🎉', done: true, order: 55},
     {text: 'Unseren neuen Van anmelden', emoji: '🚐❤️', done: true, order: 49},
     {text: 'Unser erstes Date wiederholen', emoji: '🍦', done: true, order: 57},
+    {text: 'Etwas gemeinnütziges tun', emoji: '🍲', order: 18, done: true},
+    // PARKING
+    {text: 'Bei einem Craftbeer-Tasting mitmachen', emoji: '🍺', order: 8},
     // TO DO
     {text: 'Ein Kinderbild nachstellen', emoji: '🖼️', order: 5},
-    {text: 'Bei einem Craftbeer-Tasting mitmachen', emoji: '🍺', order: 8},
     {text: 'Einen Telefonstreich machen', emoji: '📞', order: 9},
     {text: 'Ein Lied im Radio wünschen', emoji: '📻', order: 11},
     {text: 'Anfangen ein Instrument zu lernen', emoji: '🎸', order: 12},
-    {text: 'Etwas gemeinnütziges tun', emoji: '🍲', order: 18},
     {text: 'Einen Tanzkurs besuchen', emoji: '💃🕺', order: 20},
     {text: 'Bei einem Dinner im Dunkeln mitmachen', emoji: '◼️', order: 22},
-    {text: 'eine Schlittenfahrt im Schnee machen', emoji: '🛷', order: 23},
+    {text: 'Eine Schlittenfahrt im Schnee machen', emoji: '🛷', order: 23},
     {text: 'In einer heißen Quelle baden', emoji: '♨️', order: 24},
     {text: 'Die Polarlichter sehen', emoji: '🦄', order: 25},
     {text: 'Einen Töpferkurs besuchen', emoji: '🍯', order: 26},
