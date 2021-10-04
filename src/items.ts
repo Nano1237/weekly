@@ -13,7 +13,7 @@ import {FIX_ITEMS} from "./fix-items";
 export const items: Item[] = [
     ...FIX_ITEMS,
     // 39
-    {text: 'Professionelles Gesangstraining besuchen', emoji: '🎶'},
+    {text: 'Professionelles Gesangstraining buchen', emoji: '🎶'},
     // 40
     {text: 'Kart fahren', emoji: '🏎️'},
     // 41 ⚠️

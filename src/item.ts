@@ -21,4 +21,8 @@ export class Item {
      * True if the Item was discarded (cross will be shown)
      */
     dont?: boolean;
+    /**
+     * A number representing the order of the item in the total array and thus the order of the slider
+     */
+    order?: number;
 }
