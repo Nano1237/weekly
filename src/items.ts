@@ -12,29 +12,13 @@ import {FIX_ITEMS} from "./fix-items";
  */
 export const items: Item[] = [
     ...FIX_ITEMS,
-    // 39
-    {text: 'Professionelles Gesangstraining buchen', emoji: '🎶'},
-    // 40
-    {text: 'Kart fahren', emoji: '🏎️'},
-    // 41 ⚠️
-    {text: 'Mit unserem Van nach Kroatien reisen', emoji: '🚐'},
-    // 42
-    {text: 'Einen Tauchkurs buchen', emoji: '🤿'},
-    // 44
-    {text: 'Eine Pyjama-Party veranstalten', emoji: '🍀'},
-    // 45
-    {text: 'Saunieren', emoji: '🧖‍'},
-    // 46
-    {text: 'Einen Kochkurs belegen', emoji: '🧑🏻‍🍳'},
-    // 47
-    {text: 'Floating', emoji: '💧'},
-    // 48
-    {text: 'Auf einen Eisberg klettern', emoji: '🧊'},
     // 49
-    {text: 'Bobfahren', emoji: '🧊'},
-    // 50
     {text: 'Ein Musical besuchen', emoji: '🎶'},
-    // 51 ⚠️
+    // 50
+    {text: 'Auf einen Eisberg klettern', emoji: '🧊'},
+    // 51
+    {text: 'Bobfahren', emoji: '🧊'},
+    // 52 ⚠️
     {text: 'Silvester mit Milo verbringen', emoji: '🎇'},
     // 1
     {text: 'Eine Molekularküche besuchen', emoji: '⚛️'}, // würde sie machen aber findet sie lala

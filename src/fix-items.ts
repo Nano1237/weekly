@@ -10,6 +10,7 @@ export const FIX_ITEMS: Item[] = [
     {text: 'Ein 5000-Teile Puzzle schaffen', emoji: '🧩', dont: true, order: 15},
     {text: 'Insekten essen', emoji: '🐛', dont: true, order: 19},
     {text: 'Einen Dankesbrief an eine Firma schreiben', emoji: '', dont: true, order: 28},
+    {text: 'Professionelles Gesangstraining buchen', emoji: '🎶', dont: true, order: 60},
     // DONE
     {text: 'Nach Rügen fahren und dort mit einem VW Caddy Maxi Campen', emoji: '🏕️', done: true, order: 1},
     {text: 'Im Regen in Pfützen springen', emoji: '🧒', done: true, order: 2},
@@ -33,6 +34,7 @@ export const FIX_ITEMS: Item[] = [
     {text: 'Unseren neuen Van anmelden', emoji: '🚐❤️', done: true, order: 49},
     {text: 'Unser erstes Date wiederholen', emoji: '🍦', done: true, order: 57},
     {text: 'Etwas gemeinnütziges tun', emoji: '🍲', order: 18, done: true},
+    {text: 'Mit unserem Van nach Italien reisen', emoji: '🚐', done: true, order: 60},
     // PARKING
     {text: 'Bei einem Craftbeer-Tasting mitmachen', emoji: '🍺', order: 8},
     // TO DO
@@ -71,5 +73,11 @@ export const FIX_ITEMS: Item[] = [
     {text: 'Eine Englischsprachschule besuchen', emoji: '🇬🇧', order: 54},
     {text: 'Zu einem Feld fahren und einen Blumenstrauß binden', emoji: '💐', order: 56},
     {text: 'Schlittschuhlaufen', emoji: '⛸️', order: 58},
-    {text: 'Neue Restaurants ausprobieren', emoji: '🍢', order: 59},
+    {text: 'Neue Restaurants ausprobieren', emoji: '🍢', order: 59}, // 40
+    {text: 'Kart fahren', emoji: '🏎️', order: 61},
+    {text: 'Einen Tauchkurs buchen', emoji: '🤿', order: 62},
+    {text: 'Eine Pyjama-Party veranstalten', emoji: '🍀', order: 63},
+    {text: 'Saunieren', emoji: '🧖‍', order: 64},
+    {text: 'Einen Kochkurs belegen', emoji: '🧑🏻‍🍳', order: 65},
+    {text: 'Floating', emoji: '💧', order: 66},
 ];
