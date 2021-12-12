@@ -80,4 +80,8 @@ export const FIX_ITEMS: Item[] = [
     {text: 'Saunieren', emoji: '🧖‍', order: 64},
     {text: 'Einen Kochkurs belegen', emoji: '🧑🏻‍🍳', order: 65},
     {text: 'Floating', emoji: '💧', order: 66},
+    {text: 'Ein Musical besuchen', emoji: '🎶', order: 67},
+    {text: 'Auf einen Eisberg klettern', emoji: '🧊', order: 68},
+    {text: 'Als reich ausgeben und die teuerste Immobilie der Stadt besichtigen', emoji: '💰', order: 69},
+    {text: 'Silvester mit Milo verbringen', emoji: '🎇', order: 70},
 ];
