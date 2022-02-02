@@ -84,4 +84,14 @@ export const FIX_ITEMS: Item[] = [
     {text: 'Auf einen Eisberg klettern', emoji: '🧊', order: 68},
     {text: 'Als reich ausgeben und die teuerste Immobilie der Stadt besichtigen', emoji: '💰', order: 69},
     {text: 'Silvester mit Milo verbringen', emoji: '🎇', order: 70},
+    // 1
+    {text: 'Eine Molekularküche besuchen', emoji: '⚛️'}, // würde sie machen aber findet sie lala
+    // 2
+    {text: 'Schnaps selber brennen', emoji: '🍷'},
+    // 3
+    {text: 'Einen Braukurs besuchen', emoji: '🍺'},
+    // 4
+    {text: 'Gemeinsam dasselbe Buch lesen', emoji: '📖'},
+    // 5
+    {text: 'Bobfahren', emoji: '🧊'},
 ];

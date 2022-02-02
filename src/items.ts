@@ -12,16 +12,6 @@ import {FIX_ITEMS} from "./fix-items";
  */
 export const items: Item[] = [
     ...FIX_ITEMS,
-    // 1
-    {text: 'Eine Molekularküche besuchen', emoji: '⚛️'}, // würde sie machen aber findet sie lala
-    // 2
-    {text: 'Schnaps selber brennen', emoji: '🍷'},
-    // 3
-    {text: 'Einen Braukurs besuchen', emoji: '🍺'},
-    // 4
-    {text: 'Gemeinsam dasselbe Buch lesen', emoji: '📖'},
-    // 5
-    {text: 'Bobfahren', emoji: '🧊'},
     // 6
     {text: 'Reiten', emoji: '🏇'}, // würde sie machen aber findet sie lala
     // 7
