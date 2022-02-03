@@ -35,6 +35,11 @@ export const FIX_ITEMS: Item[] = [
     {text: 'Unser erstes Date wiederholen', emoji: '🍦', done: true, order: 57},
     {text: 'Etwas gemeinnütziges tun', emoji: '🍲', order: 18, done: true},
     {text: 'Mit unserem Van nach Italien reisen', emoji: '🚐', done: true, order: 60},
+    {text: 'Origami falten', emoji: '🐭', order: 39, done: true},
+    {text: 'Gin selber machen', emoji: '🍸', order: 48, done: true},
+    {text: 'Saunieren', emoji: '🧖‍', order: 64, done: true},
+    {text: 'Ein Musical besuchen', emoji: '🎶', order: 67, done: true},
+    {text: 'Silvester mit Milo verbringen', emoji: '🎇', order: 70, done: true},
     // PARKING
     {text: 'Bei einem Craftbeer-Tasting mitmachen', emoji: '🍺', order: 8},
     // TO DO
@@ -56,13 +61,11 @@ export const FIX_ITEMS: Item[] = [
     {text: 'Zorbing', emoji: '🎱', order: 34},
     {text: 'Eine Zeitkapsel vergraben', emoji: '⏳', order: 35},
     {text: 'Ein Kartenhaus bauen', emoji: '🃏', order: 36},
-    {text: 'Origami falten', emoji: '🐭', order: 39},
     {text: 'Blumen pressen', emoji: '🍀', order: 40},
     {text: 'Ein Mandala malen', emoji: '🖍️', order: 42},
     {text: 'Einen Brief an ein:e Freund:in schreiben', emoji: '💌', order: 43},
     {text: 'Einen Handabdruck in feuchtem Zement hinterlassen', emoji: '🖐', order: 46},
     {text: 'Jemanden mit dem gleichen Namen kontaktieren', emoji: '👭', order: 47},
-    {text: 'Gin selber machen', emoji: '🍸', order: 48},
     {text: 'Zu einem Schiffswrack tauchen', emoji: '🚢', order: 50},
     {
         text: '<a href="https://www.indoor-skydiving.com/UI/Booking/bookPackage.aspx?lang=1&type=30">Indoor Skydiven</a>',
@@ -77,13 +80,10 @@ export const FIX_ITEMS: Item[] = [
     {text: 'Kart fahren', emoji: '🏎️', order: 61},
     {text: 'Einen Tauchkurs buchen', emoji: '🤿', order: 62},
     {text: 'Eine Pyjama-Party veranstalten', emoji: '🍀', order: 63},
-    {text: 'Saunieren', emoji: '🧖‍', order: 64},
     {text: 'Einen Kochkurs belegen', emoji: '🧑🏻‍🍳', order: 65},
     {text: 'Floating', emoji: '💧', order: 66},
-    {text: 'Ein Musical besuchen', emoji: '🎶', order: 67},
     {text: 'Auf einen Eisberg klettern', emoji: '🧊', order: 68},
     {text: 'Als reich ausgeben und die teuerste Immobilie der Stadt besichtigen', emoji: '💰', order: 69},
-    {text: 'Silvester mit Milo verbringen', emoji: '🎇', order: 70},
     // 1
     {text: 'Eine Molekularküche besuchen', emoji: '⚛️'}, // würde sie machen aber findet sie lala
     // 2
