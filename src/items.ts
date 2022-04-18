@@ -12,27 +12,6 @@ import {FIX_ITEMS} from "./fix-items";
  */
 export const items: Item[] = [
     ...FIX_ITEMS,
-    // 6
-    {text: 'Reiten', emoji: '🏇'}, // würde sie machen aber findet sie lala
-    // 7
-    {text: 'In einer Cocktailbar Drinks durchprobieren', emoji: '🍹'},
-    // 8 ⚠️⁉️ -> hier müssen wir mal schauen wann das ist!
-    {text: 'Mit unserem Van eine Europatour machen', emoji: '🚐'},
-    // 9
-    {text: 'Einen Tesla probefahren', emoji: '🚘'}, // würde sie machen aber findet sie lala
-    // 10
-    {text: 'Ein Schießtraining besuchen', emoji: '🔫'},
-    // 11
-    {text: 'Einen Pralinenkurs besuchen', emoji: '🍫'},
-    // 12
-    {text: 'Bogenschießen gehen', emoji: '🏹'},
-    // 13
-    {text: 'GOP Varieté-Theater besuchen', emoji: '🎭'},
-    // 14
-    {text: 'Rafting oder Canyoning betreiben', emoji: '⛰️'},
-    // unordered!!!!
-    {text: 'Eine Quad-Tour machen', emoji: '🏍️'},
-    {text: 'Falkner für einen Tag sein', emoji: '🦅'},
     {text: 'Einen Hochseilgarten besuchen', emoji: '🪢'},
     {text: 'Paintball spielen', emoji: '🎨'},
     {text: 'Flyboarden', emoji: '💧'},
