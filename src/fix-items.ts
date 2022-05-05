@@ -99,4 +99,6 @@ export const FIX_ITEMS: Item[] = [
     {text: 'Rafting oder Canyoning betreiben', emoji: '⛰️', order: 83},
     {text: 'Eine Quad-Tour machen', emoji: '🏍️', order: 84},
     {text: 'Falkner für einen Tag sein', emoji: '🦅', order: 85},
+    {text: 'Einen Hochseilgarten besuchen', emoji: '🪢', order: 86},
+    {text: 'Paintball spielen', emoji: '🎨', order: 87},
 ];
