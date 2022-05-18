@@ -12,8 +12,6 @@ import {FIX_ITEMS} from "./fix-items";
  */
 export const items: Item[] = [
     ...FIX_ITEMS,
-    {text: 'Flyboarden', emoji: '💧'},
-    {text: 'Windsurfing', emoji: '🏄'},
     {text: 'Höhlentrekking', emoji: '🥾'},
     {text: 'Ein Ritteressen besuchen', emoji: '🛡️'},
     {text: 'Mit Milo nach Sankt Peter-Ording fahren', emoji: '🐶'},
