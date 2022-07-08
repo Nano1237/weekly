@@ -11,7 +11,7 @@
   "author": "Tim Rücker",
   "dependencies": {
     "@types/swiper": "^5.4.0",
-    "swiper": "^6.1.2"
+    "swiper": "^6.8.4"
   },
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^9.0.0",
