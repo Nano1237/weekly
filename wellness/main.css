@@ -3,6 +3,7 @@ html, body {
 	padding: 0;
 	border: none;
 	height: 100%;
+	font-family: 'Roboto', serif;
 }
 
 .background {
@@ -49,7 +50,8 @@ html, body {
 	background-size: 2.8em 2.8em;
 	background-color: #cee2e8;
 	width: 100vw;
-	height: 100%;
+	height: 200vh;
+	padding: 20px;
 }
 
 .container {
@@ -60,7 +62,6 @@ html, body {
 	transform: translate(-50%, -50%);
 	overflow: hidden;
 	z-index: 1;
-	width: calc(100% - 20px);
 }
 
 .garland-label {
@@ -2076,7 +2077,6 @@ input[id='candles-checkbox']:checked ~ .shadow {
 	height: 60px;
 	line-height: 60px;
 	text-align: center;
-	font-family: 'Roboto Slab', serif;
 	font-weight: 700;
 	font-size: 30px;
 	color: #eee;
@@ -2094,7 +2094,6 @@ input[id='candles-checkbox']:checked ~ .shadow {
 	border-radius: 3px;
 	left: 70px;
 	top: 15px;
-	font-family: 'Comfortaa', cursive;
 	font-weight: 400;
 	font-size: 16px;
 	font-style: normal;
@@ -2117,13 +2116,12 @@ input[id='candles-checkbox']:checked ~ .shadow {
 
 .headline {
 	text-align: center;
-	font-family: 'Roboto Slab', serif;
 	font-weight: 700;
-	font-size: 3rem;
+	font-size: 4rem;
 	padding-top: 3rem;
 }
 
 .content {
 	padding-top: 5rem;
-	font-size: 2rem;
+	font-size: 3rem;
 }
