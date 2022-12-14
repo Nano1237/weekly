@@ -60,6 +60,7 @@ html, body {
 	transform: translate(-50%, -50%);
 	overflow: hidden;
 	z-index: 1;
+	width: calc(100% - 20px);
 }
 
 .garland-label {
